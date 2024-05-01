@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movie-Recommendation</title>
+    <style>
+        body{
+            height:100vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://wallpapercave.com/wp/wp6938408.jpg');
+            background-repeat: no-repeat;
+            background-size:cover
+        }
+        @keyframes pulse {
+  0% {
+    box-shadow: 5px 5px 10px 5px white;
+  }
+  50% {
+    box-shadow: 5px 5px 20px 10px white;
+  }
+  100% {
+    box-shadow: 5px 5px 10px 5px white;
+  }
+}
+
+.logo {
+  border: 0.5px solid rgb(227, 218, 218);
+  border-radius: 20px;
+  padding: 15px;
+  width: 90%;
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: transparent;
+  -webkit-text-stroke: 3px darkmagenta;
+  position: relative;
+  animation:  pulse 2s infinite;
+  background: transparent;
+}
+
+@keyframes identifier {
+  0% {
+    border-top-color: blue;
+  }
+  30% {
+    border-left-color: red;
+  }
+  60% {
+    border-bottom-color: yellowgreen;
+  }
+  90% {
+    border-right-color: rgb(150, 23, 219);
+  }
+}
+
+.letter{  font-size: 1.6rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: transparent;
+  -webkit-text-stroke: 3px darkmagenta;
+  position: relative;
+            display:inline-block;
+            opacity: 0;
+        animation: appear 0.5s ease forwards;
+    }
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}.letter:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.letter:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.letter:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.letter:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.letter:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.letter:nth-child(6) {
+  animation-delay: 1.2s;
+}
+
+.letter:nth-child(7) {
+  animation-delay: 1.4s;
+}
+
+.letter:nth-child(8) {
+  animation-delay: 1.6s;
+}
+.letter:nth-child(9) {
+  animation-delay: 1.8s;
+}
+
+.letter:nth-child(10) {
+  animation-delay: 2s;
+}
+
+.letter:nth-child(11) {
+  animation-delay: 2.2s;
+}
+.letter:nth-child(12) {
+  animation-delay: 2.4s;
+}
+
+@keyframes fall {
+  from {
+    transform: translatex(200%);
+  }
+  to {
+    transform: translatex(0%);
+  }
+}
+
+.letter {
+  display: inline-block;
+  opacity: 0;
+  animation: appear 2s ease forwards, fall 0.2s ease forwards;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.letter1 {
+  display: inline-block;
+  opacity: 0;
+  animation: disappear 10s ease forwards, fall 0.2s ease forwards;
+}
+@keyframes fallin {
+  from {
+    transform: translatex(200%);
+  }
+  to {
+    transform: translatex(0%);
+  }
+}
+.letter1 {
+  display: inline-block;
+  opacity: 0;
+  animation: ease forwards, fall 0.2s ease forwards;
+}
+    </style>
+    </head>
+    <body>
+
+        <div class="logo">
+            <span class="letter1"><img src="https://wallpaperaccess.com/full/185895.jpg" height="30px" width="50px"></span>
+            <span class="letter">H</span>
+            <span class="letter">E</span>
+            <span class="letter">A</span>
+            <span class="letter">L</span>
+            <span class="letter">T</span>
+            <span class="letter">H</span>
+            <span class="letter"></span>
+            <span class="letter">C</span>
+            <span class="letter">A</span>
+            <span class="letter">R</span>
+            <span class="letter">E</span>
+            
+        </div>
+        <script>
+            var timer = setTimeout(function() {
+                window.location=('main');
+            }, 40000);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Dataset</title>
+    <style>
+        body {
+            background-image: url('doctor.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            text-align: center;
+            color: #333333; /* Set a default text color for better visibility */
+        }
+
+        h1 {
+            color: #333333;
+        }
+
+        form {
+            margin-top: 30px;
+            background-color: rgba(255, 255, 255, 0.9); /* Adding a semi-transparent white background to the form for better readability */
+            padding: 20px;
+            border-radius: 8px;
+            display: inline-block; /* Center the form horizontally */
+        }
+
+        input[type="file"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Upload Dataset</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <br>
+        <a href='report'><input type="submit" value="Upload"></a>
+    </form>
+</body>
+</html>
